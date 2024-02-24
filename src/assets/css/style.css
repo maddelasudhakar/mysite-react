@@ -45,7 +45,7 @@
 		 font-style: normal;
   }
 :root {
-	--primary: #C6FF00;
+	--primary: #FF8A00;
 	--secondary: #0d1013;
 	--white: #fff;
 	--black: #000;
@@ -82,9 +82,8 @@ body {
 	max-width: 1920px;
 	margin: 0 auto;
 	position: relative;
-	
 }
-h1,h2,h3,h4,h5,h6,p,a{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6,p,a{margin: 0; padding: 0; color: var(--black); font-family: 'ClashDisplay-Variable';}
 h1 {
 	font-size: 60px;
 	line-height: 80px;
@@ -110,7 +109,7 @@ h5 {
 p {
 	font-size: 16px;
 	line-height: 24px;
-	color: var(--color-body)
+	color: var(--black)
 }
 a {
 	cursor: pointer;
@@ -125,6 +124,7 @@ a {
 	text-decoration: none;
 	color: var(--default-text);
 }
+img { -ms-interpolation-mode: bicubic; border: 0; height: auto; max-width: 100%; vertical-align: middle; }
 .container {
 	max-width: 1140px;
 	height: auto;
@@ -132,14 +132,18 @@ a {
 }
 .nav-link {
     padding: 0 !important;
-    color: var(--default-text);
+	font-size: 18px;
+	font-weight: 500;
+    color: var(--black);
 }
 .nav-link.active {
     color: var(--primary) !important;
 }
 .navbar-nav {
-    gap: 16px;
+    gap: 20px;
     padding: 0 !important;
+	align-items: center;
+	margin-right: 25px;
 }
 .navbar-expand-lg {
     border-bottom: 1px solid var(--border);
@@ -148,32 +152,53 @@ a {
 .section-padding {
 	padding: 70px 15px;
 }
-
-/* Banner */
-.banner-block {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-.maddela-designer {
-    font-family: 'Jost', sans-serif;
-    color: var(--black);
-    font-size: 20px;
-    line-height: 28px;
-    background-color: var(--primary);
-    display: flex;
-    justify-content: center;
-	width: -moz-fit-content;
-    width: fit-content;
-    align-items: center;
+.primary-btn {
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #9D76C1;
     padding: 16px 34px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+	transition: .3s ease-in;
 }
-.banner-block h2 {
-	font-family: 'ClashDisplay-Semibold';
+.primary-btn:hover {
+    background: #FF8A00;
+	transition: .3s ease-in;
+}
+/* Banner */
+.bg1 {background-color: var(--background);}
+.section-padding {padding: 150px 0px;}
+.designation {
+    font-size: 120px;
+    line-height: 200px;
+    font-weight: 400;
     color: var(--black);
-	font-size: 200px;
-    line-height: 246px;
+	font-family: 'ClashDisplay-Variable';
+}
+.maddela-sudhakar {
+	font-size: 120px;
+	line-height: 200px;
+	font-weight: 600;
+}
+.banner-section {position: relative;}
+.star {
+    font-size: 700px;
+    line-height: 700px;
+    color: #ff8a00;
+    font-weight: 700;
+	position: absolute;
+    top: 0;
+    left: 0;
+	animation: rotation infinite 59s linear;
 }
 
+@keyframes rotation {
+100% {
+    transform: rotate(360deg);
+}
+}
 /* My Photo */
+
+.marquee-link{margin-right: 30px;}

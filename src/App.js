@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import './assets/css/style.css';
+import './assets/css/locomotive-scroll.css'
 import AnimatedCursor from 'react-animated-cursor';
 
 function App() {
