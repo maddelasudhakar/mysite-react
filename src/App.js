@@ -9,6 +9,8 @@ import "bootstrap/dist/js/bootstrap";
 import './assets/css/style.css';
 import './assets/css/locomotive-scroll.css'
 import AnimatedCursor from 'react-animated-cursor';
+import LocomotiveScroll from 'locomotive-scroll';
+const locomotiveScroll = new LocomotiveScroll();
 
 function App() {
   return (
